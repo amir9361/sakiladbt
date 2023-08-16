@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fact_flights
+    description: "A starter dbt model"
+    columns:
+      - name: flight_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+
+
+
+
+models:
+  - name: fact_boarding.pass
+    description: "A starter dbt model"
+    columns:
+      - name: ticket_no
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+
+
+
+models:
+  - name: fact_tickts
+    description: "A starter dbt model"
+    columns:
+      - name: ticket_no
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
